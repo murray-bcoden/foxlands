@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');  
 var uglify = require('gulp-uglify');  
 var babel = require('gulp-babel');
+var svgmin = require('gulp-svgmin');
 
 gulp.task('sass2', function () {
   return gulp.src('./*.scss')
@@ -47,4 +48,10 @@ gulp.task('convert', function() {
             presets: ['es2015']
         }))
         .pipe(gulp.dest('js'));
+});
+
+gulp.task('svgmin', function() {
+    return gulp.src('assets/src/svgs/**/*.svg')
+        .pipe(svgmin())
+    .   pipe(gulp.dest('assets/dist/svgs'));
 });
