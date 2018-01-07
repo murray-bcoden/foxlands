@@ -96,7 +96,7 @@
 
 
 @media only screen and (min-width: 960px) {
-.hero-content-wrap{padding-bottom:350px;}
+	.hero-content-wrap{padding-bottom:350px;}
 }
 
 // Hero - Front Page
@@ -548,7 +548,14 @@
 // Banner
 
 @media only screen and (max-width: 959px) {
-	.bg-section .half{max-width:700px; width:100%;}
+	.bg-section .half{
+		max-width:700px; width:100%;
+		&.f-right {
+			&.icon {
+				display:  none
+			}
+		}
+	}
 	
 }
 
