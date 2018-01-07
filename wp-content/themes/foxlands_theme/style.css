@@ -4692,7 +4692,9 @@ main.facts {
 @media only screen and (max-width: 959px) {
   .bg-section .half {
     max-width: 700px;
-    width: 100%; } }
+    width: 100%; }
+    .bg-section .half.f-right.icon {
+      display: none; } }
 
 @media only screen and (max-width: 768px) {
   .bg-section .half {
@@ -4798,5 +4800,26 @@ main.facts {
     background-color: #fff;
     box-sizing: border-box;
     padding: 15px 25px; } }
+
+/* ==========================================================================
+   11. Main Nav Overrides
+   ========================================================================== */
+#masthead ul.sub-menu {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #a0300e;
+  display: none; }
+  #masthead ul.sub-menu li a {
+    font-size: 1em;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    color: #d95228; }
+    #masthead ul.sub-menu li a:hover {
+      color: white;
+      border-color: white; }
+
+li.menu-item-has-children:hover ul.sub-menu, li.menu-item-has-children.current-menu-item ul.sub-menu {
+  display: block !important; }
 
 /*# sourceMappingURL=style.css.map */

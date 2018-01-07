@@ -20,6 +20,7 @@ $(window).load(function () {
 	});
 
 	$('.mh').matchHeight();
+
 	// plugins here
 
 	// $(".multiselect select").dropkick({

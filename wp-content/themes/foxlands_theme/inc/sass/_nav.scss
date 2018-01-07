@@ -1,0 +1,30 @@
+#masthead ul.sub-menu {
+    position: absolute;
+    left: 0;
+    
+    width: 100%;
+    background-color: $dorange;
+
+    display: none;
+
+    li {
+        a {
+            font-size: 1em;
+            font-weight: 500;
+            border-bottom: 4px solid transparent;
+            color: $orange;
+
+            &:hover {
+                color: white;
+                border-color: white;
+            }
+        }
+    }
+}
+
+li.menu-item-has-children:hover, li.menu-item-has-children.current-menu-item {
+    ul.sub-menu 
+    {
+        display: block !important;
+    }
+}

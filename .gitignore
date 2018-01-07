@@ -1,5 +1,7 @@
 *.log
 *.sql
+style.css
+
 .DS_Store
 wp-config.php
 wp-content/advanced-cache.php
