@@ -1,6 +1,6 @@
 *.log
 *.sql
-style.css
+**/style.css
 
 .DS_Store
 wp-config.php
