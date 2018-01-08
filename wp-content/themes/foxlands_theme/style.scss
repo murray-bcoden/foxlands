@@ -151,8 +151,17 @@ span.wpcf7-not-valid-tip {
 
 // HTML Class Defaults
 
-.section{&.nmb{margin-bottom:0 !important;}}
-.container{
+.section {
+  &.nmb{
+    margin-bottom:0 !important;
+    
+    .f-left .text-block p {
+      font-size: 24px;
+    }
+  }
+}
+
+  .container{
 
   max-width:1400px; 
   width:95%; 
@@ -196,7 +205,6 @@ span.wpcf7-not-valid-tip {
     margin-bottom: 1em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-
   }
 
   h1{font-size:33px;}
@@ -270,7 +278,10 @@ span.wpcf7-not-valid-tip {
     }
 
   }
-
+  
+  strong {
+    color: #000000;
+  }
 }
 
 /* header */
@@ -1716,7 +1727,9 @@ main.contact{
   // margin-bottom: 50px;
   .table{height:560px;}
 
-
+  .table .cell.middle {
+    padding-top: 100px;
+  }
 
   h1{
 
@@ -1763,7 +1776,6 @@ main.contact{
     &:last-child{margin-bottom:0;}
 
   }
-
 }
 
 /* full width content block */
@@ -1823,7 +1835,10 @@ main.contact{
       padding-right:25px;
       padding-bottom:50px;
 
-      &.text-block{padding-left:25px; max-width:360px;}
+      &.text-block{
+        padding-left:25px; 
+        max-width:360px;
+      }
 
     }
 
