@@ -11,12 +11,11 @@
         a {
             font-size: 1em;
             font-weight: 500;
-            border-bottom: 4px solid transparent;
+            border-bottom: 0px;
             color: $orange;
 
             &:hover {
                 color: white;
-                border-color: white;
             }
         }
     }
