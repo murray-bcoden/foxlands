@@ -164,17 +164,35 @@ span.wpcf7-not-valid-tip {
         color: white;
       }
     }
+    
+    .f-right,.f-left {
+      a {
+        &:before {
+          content: url('assets/dist/svgs/arrow.svg');
+        }
+      }
+    }
+
+    .white-text.f-left {
+      a {
+        &:before {
+          content: url('assets/dist/svgs/arrow-white.svg')
+        }
+      }
+    }
 
     a {
       font-family: $spec;
       font-size: 20px;
-      font-weight: 600;
+      font-weight: 500;
       text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
 
       &:before {
         padding-right: 10px;
-        content: url('assets/dist/svgs/arrow.svg');
       }
+
     }
   }
 }
