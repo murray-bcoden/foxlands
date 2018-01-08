@@ -152,11 +152,29 @@ span.wpcf7-not-valid-tip {
 // HTML Class Defaults
 
 .section {
-  &.nmb{
+  &.nmb {
     margin-bottom:0 !important;
     
     .f-left .text-block p {
       font-size: 24px;
+    }
+
+    .f-right {
+      a {
+        color: white;
+      }
+    }
+
+    a {
+      font-family: $spec;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:before {
+        padding-right: 10px;
+        content: url('assets/dist/svgs/arrow.svg');
+      }
     }
   }
 }
