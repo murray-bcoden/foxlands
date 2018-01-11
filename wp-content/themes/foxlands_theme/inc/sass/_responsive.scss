@@ -303,12 +303,6 @@
 	
 }
 
-
-
-
-
-
-
 // Half Image Each
 
 @media only screen and (max-width: 1024px) {
@@ -336,12 +330,6 @@
 
 	}
 }
-
-
-
-
-
-
 
 // Contact Form
 
@@ -389,16 +377,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
 // Banner
 
 @media only screen and (max-width: 767px) {
@@ -421,18 +399,6 @@
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // HERO BLOCK
 
@@ -470,20 +436,6 @@
 @media only screen and (max-width: 479px) {
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Columns
 
@@ -528,22 +480,6 @@
 	
 		padding:25px calc(25px - 2.5%) !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Banner
 
@@ -628,19 +564,6 @@
 	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // News
 
 @media only screen and (max-width: 1024px) {
@@ -698,21 +621,6 @@
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // News single
 
 @media only screen and (max-width: 1024px) {
@@ -754,21 +662,6 @@
 
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Contact Page
 
@@ -861,6 +754,27 @@
 	
 }
 
-@media only screen and (max-width: 479px) {
-	
+@media only screen and (max-width: 1024px) {
+	.hero {
+		margin-top: 40px !important;
+	}
+	.wp-caption {
+		display: block !important;
+	}
+	.land-history__item__year {
+		padding: 0 !important;
+		padding-bottom: 3vh !important;
+		
+		&:before {
+			width: 100% !important;
+		}
+	}
+	.land-history__item__details ul {
+		flex-direction: column !important;
+
+		li {
+			width: 100%;
+			margin: 0 !important;
+		}
+	}
 }

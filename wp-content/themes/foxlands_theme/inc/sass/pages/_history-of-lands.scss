@@ -1,0 +1,127 @@
+$text-max-width: 690px;
+$content-max-width: 1400px;
+
+.hero {
+    text-align: center;
+    margin-top: 125px;
+}
+
+.hero__content {
+    margin: 0 auto;
+
+    padding: 0 5% 5vh;
+    max-width: $text-max-width;
+    text-align: left;
+}
+
+.hero__title {
+    padding: 0 5% 5vh;
+
+    h1 {
+        font-size: 60px;
+        font-family: $spec;
+
+        span {
+            color: black;
+        }
+        color: $orange;
+        margin: 0;
+        line-height: 60px;
+    }
+    p {
+        display: none;
+    }
+}
+
+.hero__img {
+    background-color: #f6f5ec;
+    img {
+        max-width: $content-max-width;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hero__intro {
+    @extend .hero__content;
+}
+
+.land-history {
+    max-width: $content-max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.land-history__item {
+    padding: 0 5vh 2%;
+}
+
+.land-history__item__year {
+    position: relative;
+    padding: 0 5%;
+
+    font-size: 36px;
+    font-family: $spec;
+    color: $orange;
+    font-weight: 400;
+    
+
+    &:before {
+        content:'';
+        width: 25%;
+        height: 2px;
+        background: black;
+        position: absolute; 
+        top: -15px;
+    }
+}
+
+.land-history__item__details {
+    max-width: $text-max-width;
+    margin: 0px auto;
+
+    p {
+        margin: 0px auto 20px auto;
+        width: 100%;
+    }
+
+    .wp-caption {
+        display: flex;
+        margin: 0px auto 20px auto;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .wp-caption-text {
+            padding-left: 20px;
+            min-width: 200px;
+            vertical-align: text-bottom;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    ul { 
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        li {
+            flex-grow: 1;
+            flex-basis: 0;
+            margin: 0px 10px;
+            h3 {
+                position: relative;
+                color: $orange;
+                border-bottom: 3px solid black;
+            }
+        }
+    }
+}

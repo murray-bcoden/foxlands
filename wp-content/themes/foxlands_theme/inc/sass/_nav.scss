@@ -21,9 +21,13 @@
     }
 }
 
-li.menu-item-has-children:hover, li.menu-item-has-children.current-menu-item {
+li.menu-item-has-children:hover, li.menu-item-has-children.current-menu-item, li.menu-item-has-children.current-page-parent {
     ul.sub-menu 
     {
         display: block !important;
     }
+}
+
+#masthead ul.sub-menu li.current_page_item a {
+    color: white;
 }
