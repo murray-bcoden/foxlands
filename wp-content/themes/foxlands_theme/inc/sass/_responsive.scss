@@ -17,7 +17,7 @@
 @media only screen and (min-width: 1101px) {
 
 	.mobile-menu,
-	#menu-toggle{display:none !important;}
+	#menu-toggle{display:none;}
 
 }
 
@@ -37,7 +37,7 @@
 		padding-bottom: 20px;
 		background-image: url(img/bg.png);
 
-		&.no-bg{background-image:none !important;}
+		&.no-bg{background-image:none;}
 
 		&.non-front-page {
 
@@ -253,11 +253,11 @@
 
 	.double-row  .top-row .col{
 
-		float:none !important;
-		width:95% !important;
-		max-width: 100% !important;
+		float:none;
+		width:95%;
+		max-width: 100%;
 
-		&.col3 .constrained{width:100% !important; max-width:100%!important}
+		&.col3 .constrained{width:100%; max-width:100%!important}
 
 	}
 
@@ -326,7 +326,7 @@
 		width: 100%;
 		float: none;
 
-		img{margin:0 auto 20px !important; display:block;}
+		img{margin:0 auto 20px; display:block;}
 
 	}
 }
@@ -348,7 +348,7 @@
 
 	    	max-width: 100%;
 	    	display: block;
-	    	float: none !important;
+	    	float: none;
 
 	    }
 
@@ -371,7 +371,7 @@
 	
 	.title-block h1, .title-block h2{
 
-		font-size:40px !important;
+		font-size:40px;
 
 	}
 
@@ -385,7 +385,7 @@
 
 		h1,h2,h3,h4,h5,h6{
 
-			font-size: 40px !important;
+			font-size: 40px;
 			line-height: 1.5;
 				
 		}
@@ -465,11 +465,11 @@
 @media only screen and (max-width: 768px) {
 	.half_block_bg.section .half{
 
-		float: none !important;
+		float: none;
 		width: 100%;
 		display: block;
 		box-sizing:border-box;
-		padding:25px !important;
+		padding:25px;
 
 	}
 
@@ -478,7 +478,7 @@
 
 @media only screen and (max-width: 479px) {
 	
-		padding:25px calc(25px - 2.5%) !important;
+		padding:25px calc(25px - 2.5%);
 }
 
 // Banner
@@ -497,10 +497,10 @@
 
 @media only screen and (max-width: 768px) {
 
-	.bg-section .half{padding:50px 0 !important;}
+	.bg-section .half{padding:50px 0;}
 	.bg-section{
 
-		padding:0 !important;
+		padding:0;
 
 	}
 	
@@ -534,7 +534,7 @@
 
 		width: 100%;
 		float: none;
-		padding:25px !important;
+		padding:25px;
 
 	}
 
@@ -548,7 +548,7 @@
 @media only screen and (max-width: 767px) {
 	.facts_wrapper .single {
 
-		.container{width:100% !important;}
+		.container{width:100%;}
 
 		.content p{
 	
@@ -756,25 +756,32 @@
 
 @media only screen and (max-width: 1024px) {
 	.hero {
-		margin-top: 40px !important;
+		margin-top: 40px;
 	}
 	.wp-caption {
-		display: block !important;
+		display: block;
 	}
 	.land-history__item__year {
-		padding: 0 !important;
-		padding-bottom: 3vh !important;
+		padding: 0;
+		padding-bottom: 3vh;
 		
 		&:before {
-			width: 100% !important;
+			width: 100%;
 		}
 	}
 	.land-history__item__details ul {
-		flex-direction: column !important;
+		flex-direction: column;
 
 		li {
 			width: 100%;
-			margin: 0 !important;
+			margin: 0;
+		}
+	}
+	.land-history__item__details .wp-caption {
+		flex-direction: column;
+		.wp-caption-text {
+			padding-left: 0px;
+			align-self: flex-start;
 		}
 	}
 }
