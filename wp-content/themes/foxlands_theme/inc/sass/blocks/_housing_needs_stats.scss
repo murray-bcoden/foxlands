@@ -1,0 +1,60 @@
+.housing-needs-stats {
+   .housing-needs-stats__wrapper {
+       max-width: $content-width;
+       margin: auto;
+       padding: 5%;
+       border-top: 1px solid $section-border;
+   }
+   .housing-needs-stats__graphs__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5vh;
+
+        .image {
+            width: 32%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+   }
+   .housing-needs-stats__content__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5vh;
+
+        .housing-needs-stats__content__detail {
+            width: 48%;
+        }
+   }
+   .housing-needs-stats__source {
+        P {
+            padding-top: 5vh;
+            font-size: .80em;
+            font-weight: 600;
+        }
+   }
+    // responsive
+    @media only screen and (max-width: 767px) {
+        .housing-needs-stats__graphs__wrapper, 
+        .housing-needs-stats__content__wrapper
+        {
+            flex-direction: column;
+            padding-top: 0;
+        }
+
+
+        .housing-needs-stats__graphs__wrapper .image,
+        .housing-needs-stats__content__wrapper .housing-needs-stats__content__detail {
+            width: 100%;
+            padding-top: 5vh;
+        }
+
+        .housing-needs-stats__graphs__wrapper .image:first-child {
+            padding-top: 0;
+        }
+
+    }
+}
