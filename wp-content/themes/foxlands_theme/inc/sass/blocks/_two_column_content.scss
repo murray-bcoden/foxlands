@@ -10,6 +10,15 @@
 
         &.image-left {
             flex-direction: row;
+            
+            .image {
+                padding-right: 20px;
+            }
+        }
+        &.image-right {
+            .image {
+                padding-left: 20px;
+            }
         }
         max-width: $content-width;
 
@@ -19,7 +28,6 @@
         .content {
             width: 65%;
             text-align: left;
-            padding: 0 5%;
         }
 
         .image {
@@ -38,6 +46,14 @@
             &.image-left {
                 flex-direction: column;    
             }
+            
+            &.image-right, &.image-left {
+                .image {
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+            }
+
             .content, .image {
                 width: 100%;
             }
