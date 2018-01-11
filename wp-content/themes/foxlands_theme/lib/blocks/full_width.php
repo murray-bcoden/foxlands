@@ -23,16 +23,16 @@
 				</div>
 			<?php endif; ?>
 
-			<?php if ( $contet = get_sub_field( 'column_content_1' ) ) : ?>
-				<div class="f-left quarter text-block"><?php echo $contet; ?></div>
+			<?php if ( $content = get_sub_field( 'column_content_1' ) ) : ?>
+				<div class="f-left quarter text-block"><?php echo $content; ?></div>
 			<?php endif; ?>
 
-			<?php if ( $contet = get_sub_field( 'column_content_2' ) ) : ?>
-				<div class="f-left quarter text-block"><?php echo $contet; ?></div>
+			<?php if ( $content = get_sub_field( 'column_content_2' ) ) : ?>
+				<div class="f-left quarter text-block"><?php echo $content; ?></div>
 			<?php endif; ?>
 
-			<?php if ( $contet = get_sub_field( 'column_content_3' ) ) : ?>
-				<div class="f-left quarter text-block"><?php echo $contet; ?></div>
+			<?php if ( $content = get_sub_field( 'column_content_3' ) ) : ?>
+				<div class="f-left quarter text-block"><?php echo $content; ?></div>
 			<?php endif; ?>
 
 		</div>
