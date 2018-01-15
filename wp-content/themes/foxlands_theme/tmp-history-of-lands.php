@@ -8,7 +8,7 @@
  */
 get_header(); ?>
 
-<main class="about_us_history">
+<main class="section_submenu about_us_history">
     
     <section class="hero">
 
@@ -59,3 +59,5 @@ get_header(); ?>
     </section>
     
 </main>
+
+<?php get_footer(); ?>

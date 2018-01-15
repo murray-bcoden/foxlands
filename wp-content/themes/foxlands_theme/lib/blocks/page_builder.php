@@ -38,10 +38,7 @@
       echo get_template_part('lib/blocks/generic_text');
 
     elseif( get_row_layout() == 'two_column_content' ):
-        echo get_template_part('lib/blocks/two_column_content');
-    
-    elseif( get_row_layout() == 'housing_needs_stats' ):
-          echo get_template_part('lib/blocks/housing_needs_stats');    
+        echo get_template_part('lib/blocks/two_column_content'); 
 
   /*
 

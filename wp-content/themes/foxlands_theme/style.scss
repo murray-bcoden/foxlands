@@ -150,7 +150,13 @@ span.wpcf7-not-valid-tip {
 .f-right{float:right;}
 
 // HTML Class Defaults
+.section_submenu {
+  margin-top: 100px;
 
+  @media only screen and (max-width: 1100px) {
+    margin-top: 15px;
+  }
+}
 .section {
   &.nmb {
     margin-bottom:0 !important;
@@ -197,7 +203,7 @@ span.wpcf7-not-valid-tip {
   }
 }
 
-  .container{
+  .container {
 
   max-width:1400px; 
   width:95%; 
@@ -2182,12 +2188,15 @@ main.facts{
    11. Pages
    ========================================================================== */
 @import "inc/sass/pages/history-of-lands";
+@import "inc/sass/pages/housing_needs_stats";
+@import "inc/sass/pages/planning_development";
 
 /* ==========================================================================
    11. Blocks
    ========================================================================== */
 @import "inc/sass/blocks/two_column_content";
-@import "inc/sass/blocks/housing_needs_stats";
+@import "inc/sass/blocks/section_title";
+@import "inc/sass/blocks/planning_development";
 
 /* ==========================================================================
    12. Responsive

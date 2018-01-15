@@ -4,7 +4,7 @@
 
 	<div class="container clearfix">
 		
-		<div class="half text-block white-text f-left">
+		<div class="text-block white-text f-left">
 			
 			<?php echo $content; ?>
 
