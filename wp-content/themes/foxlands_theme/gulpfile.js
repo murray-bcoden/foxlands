@@ -27,7 +27,7 @@ gulp.task('sass:watch', function() {
     gulp.watch('js/main.js', ['convert']);
 });
 
-gulp.task('default', ['sass', 'sass:watch']);
+gulp.task('default', ['sass', 'convert', 'scripts', 'svgmin']);
 
 
 var jsFiles = 'js/vendor/*.js',  
