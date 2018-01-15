@@ -1,0 +1,7 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="176px" height="176px">
+    <path fill-rule="evenodd"  fill="rgb(220, 81, 40)" d="M88.000,0.000 C136.601,0.000 176.000,39.399 176.000,88.000 C176.000,136.601 136.601,176.000 88.000,176.000 C39.399,176.000 0.000,136.601 0.000,88.000 C0.000,39.399 39.399,0.000 88.000,0.000 Z"/>
+    <text font-family="Austin" fill="rgb(246, 245, 236)" transform="matrix( 2.78872700286968, 0, 0, 2.78872700286967,20.7455714772207, 114.887270028697)" font-weight="bold" font-size="25px">&#49;&#48;&#37;</text>
+</svg>
