@@ -8,13 +8,7 @@
 #masthead ul li a{margin:10px 25px}
 }
 
-@media only screen and (max-width: 1300px) {
-	
-	#masthead ul{text-align:right;}
-
-}
-
-@media only screen and (min-width: 1101px) {
+@media only screen and (min-width: 1248px) {
 
 	.mobile-menu,
 	#menu-toggle{display:none;}
@@ -23,13 +17,13 @@
 
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1248px) {
 	
 	#masthead ul{display:none;}
 
 	#masthead{min-height:66px;}
 
-	.mobile-menu{
+	.mobile-menu {
 		display: none;
 		background-position:center center;
 		background-repeat:no-repeat;
@@ -73,6 +67,16 @@
 			@include no-format;
 			box-sizing:border-box;
 			padding:0 40px;
+			
+			li {
+				a {
+					opacity: 1;
+					transition: opacity 0.5s, visibility 0.5s;
+				}
+				a:hover {
+					opacity: 0.8;
+				}
+			}
 		}
 		
 		a {
@@ -83,7 +87,32 @@
 			display: block;
 
 		}
+	}
+	
+	.mobile-menu.non-front-page ul.sub-menu {
+		border-top: 0;
+		padding-top: 0;
+	}
 
+	ul.sub-menu {
+		padding: 0;
+		
+		li {
+			margin: 5px 0;
+			background-color: $dorange;
+			padding: 15px;
+			position: relative;
+			
+			&:before {
+				content: ' ';
+				width: 0;
+				height: calc(100% - 7px);
+				position: absolute;
+				border: 3px solid $brown;
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 
 }
